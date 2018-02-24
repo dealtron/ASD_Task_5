@@ -4,7 +4,6 @@
 #include <string>
 #include <windows.h>
 #include <iostream>
-
 #define first(L) L.first
 #define last(L) L.last
 #define next(P) P->next
@@ -29,14 +28,16 @@ typedef struct elmlist *address;
 
 struct elmlist {
     //------------- your code here -----------
-
-
+    infotype info;
+    address next;
+    address prev;
     //----------------------------------------
 };
 
 struct List {
     //------------- your code here -----------
-
+    address first;
+    address last;
     //----------------------------------------
 };
 
